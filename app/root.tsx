@@ -11,19 +11,20 @@ import {
 import stylesheet from "~/tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: stylesheet }
+  { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" },
 ];
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-white dark:bg-neutral-900 font-body">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
