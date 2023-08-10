@@ -12,7 +12,7 @@ import stylesheet from "~/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
-  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" },
+  { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" },
 ];
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-white dark:bg-neutral-900 font-body">
+      <body className="bg-white font-light dark:bg-darkBG font-body dark:text-white">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -9,7 +9,9 @@ export default {
         'body': ['Poppins', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Roboto']
       },
       colors: {
-        'darkBG': '#222222', // Arreglar
+        'darkBG': '#222222',
+        'titleBG': '#252525',
+        'borderBG': '#444444'
       }
     },
   },
