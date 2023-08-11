@@ -16,8 +16,8 @@ export default function ResumeIndexRoute() {
       <div className="dark:bg-titleBG py-14">
         <h2 className="pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Resume</h2>
       </div>
-      <section className="grid grid-rows-2 h-min">
-        <section className="row-span-1 grid grid-cols-2 gap-20 mx-48 my-4">
+      <section className="grid grid-rows-3 h-min">
+        <section className="row-span-2 grid grid-cols-2 gap-20 mx-48 my-4">
           <article className="col-span-1 mt-4 ">
             <h3 className="font-medium text-xl ml-8 underline decoration-teal-400">Education</h3>
             <ul className="mt-3">
