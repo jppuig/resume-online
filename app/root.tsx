@@ -26,7 +26,7 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-white font-light dark:bg-darkBG font-body dark:text-white min-h-screen flex flex-col">
-        <header className="text-white py-2 lg:py-6 max-sm:place-items-center">
+        <header className="text-white py-3 lg:py-6 max-sm:place-items-center">
           <nav className="sm:flex sm:justify-between items-center">
             <Link to="/" className="max-sm:hidden">
               <h1 className="text-2xl ml-2 lg:ml-6 max-sm:max-w-fit subpixel-antialiased shadow-2xl bg-gradient-to-r from-blue-500 from-10% via-cyan-500 via-30% to-emerald-500 to-95%  hover:from-pink-500 hover:to-yellow-500 lg:text-4xl">Juan Pedro <span className="font-medium">Puig</span></h1>
