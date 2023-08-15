@@ -14,19 +14,10 @@ export default function ResumeIndexRoute() {
         <h2 className="pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Resume</h2>
       </div>
       <section className="grid grid-rows-3 h-min">
-        <section className="row-span-2 grid grid-cols-2 gap-20 mx-48 my-4">
-          <article className="col-span-1 mt-4 ">
+        <section className="row-span-2 grid grid-cols-2 gap-20 my-4">
+          <article className="col-span-1 mt-4 place-self-end">
             <h3 className="font-medium text-xl ml-8 underline decoration-teal-400">Education</h3>
-            <ul className="mt-3">
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Certificate of proficiency in english (CPE)</h4>
-                  <p className="text-slate-400 text-sm">2019 | University of Cambridge</p>
-                </div>
-              </li>
+            <ul className="mt-3 flex flex-col">
               <li className="inline-flex space-x-2 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -34,6 +25,15 @@ export default function ResumeIndexRoute() {
                 <div>
                   <h4 className="font-medium">Software Engineer</h4>
                   <p className="text-slate-400 text-sm">2021 - today | ORT University</p>
+                </div>
+              </li>
+              <li className="inline-flex space-x-2 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+                <div>
+                  <h4 className="font-medium">Certificate of proficiency in english (CPE)</h4>
+                  <p className="text-slate-400 text-sm">2019 | University of Cambridge</p>
                 </div>
               </li>
               <li className="inline-flex space-x-2 mb-4">
@@ -65,7 +65,7 @@ export default function ResumeIndexRoute() {
               </li>
             </ul>
           </article>
-          <article className="col-span-1 mt-4 ">
+          <article className="col-span-1 mt-4 max-w-lg">
             <h3 className="font-medium text-xl ml-8 underline decoration-teal-400">Technologies</h3>
             <article>
               <ul className="grid mt-2">

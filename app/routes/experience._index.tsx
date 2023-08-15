@@ -13,25 +13,29 @@ export default function ExperienceIndexRoute() {
       <div className="dark:bg-titleBG py-14">
         <h2 className="pl-56 text-3xl underline decoration-teal-400 decoration-3 font-medium">Experience</h2>
       </div>
-      <article className="grid grid-cols-2 gap-x-20 gap-y-8 mx-48 my-12">
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
+      <article className="grid grid-cols-6 gap-x-20 gap-y-8 my-12">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-2 col-end-4">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Associate Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
-            <p>August 2023 - today</p>
+            <p>August 2023 - current</p>
+            <ul className="list-disc ml-4">
+              <li>Helping and lecturing students regarding Haskell projects over two hours a week per group inside the classroom.</li>
+              <li>Grading those same projects along the semester.</li>
+            </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-4 col-end-6">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Assistant Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
             <p>March 2023 - July 2023</p>
             <ul className="list-disc ml-4">
-              <li>In charge of lecturing study spaces in the afternoon.</li>
+              <li>In charge of lecturing study spaces of Data structures and algorithms 1 in C++ language.</li>
             </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-2 col-end-4">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Paid Media Specialist</h3>
           <div className="text-sm text-slate-400">
             <p>Wasabi Digital | Montevideo, UY</p>
@@ -44,7 +48,7 @@ export default function ExperienceIndexRoute() {
             </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-4 col-end-6">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Reprogramming Team Member</h3>
           <div className="text-sm text-slate-400">
             <p>Sarea | Montevideo, UY</p>
