@@ -1,11 +1,5 @@
-import type { V2_MetaFunction, ActionArgs } from "@remix-run/node";
-import { Form, useActionData } from "@remix-run/react";
-import { redirect } from "@remix-run/node";
-
-import Nav from "./nav";
-
-import { sendEmail } from "~/utils/sendEmail";
-import { badRequest } from "~/utils/request.server";
+import type { V2_MetaFunction } from "@remix-run/node";
+// import { Form } from "@remix-run/react";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -14,48 +8,28 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-export const action = async ({ request }: ActionArgs) => { 
-  const form = await request.formData();
-  const name = form.get("name");
-  const email = form.get("email");
-  const subject = form.get("subject");
-  const message = form.get("message");
-
-  if (typeof name !== "string" || typeof email !== "string" || typeof subject !== "string" || typeof message !== "string") {
-    return badRequest({
-      fields: null,
-      formError: "Form not submitted correctly."
-    });
-}
-
-  await sendEmail(name, email, subject, message);
-
-  return redirect("/");
-}
-
-export default function ResumeIndexRoute() {
-  // const actionData = useActionData<typeof action>();
+export default function ContactIndexRoute() {
 
   return (
     <div>
-      <Nav />
       <div className="dark:bg-titleBG py-14">
         <h2 className="pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Contact</h2>
       </div>
       <section className="inline-flex space-x-10 place-content-center place-items-center min-w-full mt-24">
-        <article className="flex flex-col space-y-7">
+        <article className="grid grid-cols-2 gap-x-20 gap-y-8 mx-48 my-12">
+        {/* flex flex-xol space-y-7 */}
           <div className="inline-flex space-x-2 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" className="w-8 h-8 stroke-teal-400">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
             </svg>
             <p>(+598)098600681</p>
           </div>
-          <div className="inline-flex space-x-2 items-center">
+          <a href="mailto:jppuigpesce@gmail.com" className="inline-flex space-x-2 items-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" className="w-8 h-8 stroke-teal-400">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
             <p className="select-all">jppuigpesce@gmail.com</p>
-          </div>
+          </a>
           <a href="https://www.linkedin.com/in/juan-pedro-puig/" className="inline-flex space-x-2 items-center">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.000000 120.000000"  preserveAspectRatio="xMidYMid meet" className="w-8 h-8">
               <g transform="translate(0.000000,120.000000) scale(0.100000,-0.100000)" className="fill-teal-400" stroke="none">
@@ -71,7 +45,7 @@ export default function ResumeIndexRoute() {
             <p>jppuig</p>
           </a>
         </article>
-        <Form method="post" className="flex flex-col space-y-7">
+        {/* <Form method="post" className="flex flex-col space-y-7 mt-1">
           <div className="inline-flex">
             <div className="flex flex-col space-y-4 w-64 mr-4">
               <input type="text" name="name" placeholder="Full Name" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
@@ -83,7 +57,7 @@ export default function ResumeIndexRoute() {
           <button type="submit" className="hover:bg-teal-400 w-20 py-2 border-2 rounded-lg border-teal-400 place-self-center">
             Send
           </button>
-        </Form>
+        </Form> */}
       </section>
     </div>
   );

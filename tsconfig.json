@@ -1,5 +1,5 @@
 {
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "netlify/functions/sendEmail.js"],
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "netlify/functions/sendEmail.js", "app/utils/sendEmail.js"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2019"],
     "isolatedModules": true,

@@ -12,7 +12,7 @@ export default {
         'darkBG': '#222222',
         'titleBG': '#252525',
         'borderBG': '#444444'
-      }
+      },
     },
   },
   plugins: [],

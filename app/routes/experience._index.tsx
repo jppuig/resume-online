@@ -1,7 +1,5 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 
-import Nav from "./nav";
-
 export const meta: V2_MetaFunction = () => {
   return [
     { title: "JPP | Experience" },
@@ -9,23 +7,22 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-export default function ResumeIndexRoute() {
+export default function ExperienceIndexRoute() {
   return (
     <div>
-      <Nav />
       <div className="dark:bg-titleBG py-14">
         <h2 className="pl-56 text-3xl underline decoration-teal-400 decoration-3 font-medium">Experience</h2>
       </div>
       <article className="grid grid-cols-2 gap-x-20 gap-y-8 mx-48 my-12">
         <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
-          <h3 className="font-medium mb-1 underline">Associate Professor</h3>
+          <h3 className="font-medium mb-1 underline decoration-teal-400">Associate Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
             <p>August 2023 - today</p>
           </div>
         </div>
         <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
-          <h3 className="font-medium mb-1 underline">Assistant Professor</h3>
+          <h3 className="font-medium mb-1 underline decoration-teal-400">Assistant Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
             <p>March 2023 - July 2023</p>
@@ -35,7 +32,7 @@ export default function ResumeIndexRoute() {
           </div>
         </div>
         <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
-          <h3 className="font-medium mb-1 underline">Paid Media Specialist</h3>
+          <h3 className="font-medium mb-1 underline decoration-teal-400">Paid Media Specialist</h3>
           <div className="text-sm text-slate-400">
             <p>Wasabi Digital | Montevideo, UY</p>
             <p>March 2021 - September 2022</p>
@@ -48,7 +45,7 @@ export default function ResumeIndexRoute() {
           </div>
         </div>
         <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400">
-          <h3 className="font-medium mb-1 underline">Reprogramming Team Member</h3>
+          <h3 className="font-medium mb-1 underline decoration-teal-400">Reprogramming Team Member</h3>
           <div className="text-sm text-slate-400">
             <p>Sarea | Montevideo, UY</p>
             <p>Reference: Luís Labadie - 094445907</p>
