@@ -20,8 +20,8 @@ export default function ExperienceIndexRoute() {
             <p>ORT University | Montevideo, UY</p>
             <p>August 2023 - current</p>
             <ul className="list-disc ml-4">
-              <li>Helping and lecturing students regarding Haskell projects over two hours a week per group inside the classroom.</li>
-              <li>Grading those same projects along the semester.</li>
+              <li>Lecturing and helping students regarding Haskell projects for the subject Computer Fundamentals over two hours a week per group.</li>
+              <li>Grading those projects along the semester.</li>
             </ul>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function ExperienceIndexRoute() {
             <p>ORT University | Montevideo, UY</p>
             <p>March 2023 - July 2023</p>
             <ul className="list-disc ml-4">
-              <li>In charge of lecturing study spaces of Data structures and algorithms 1 in C++ language.</li>
+              <li>In charge of lecturing study spaces for the subject Data structures and Algorithms 1 in C++.</li>
             </ul>
           </div>
         </div>

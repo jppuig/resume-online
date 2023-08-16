@@ -24,7 +24,7 @@ export default function ResumeIndexRoute() {
                 </svg>
                 <div>
                   <h4 className="font-medium">Software Engineer</h4>
-                  <p className="text-slate-400 text-sm">2021 - today | ORT University</p>
+                  <p className="text-slate-400 text-sm">2021 - current | ORT University</p>
                 </div>
               </li>
               <li className="inline-flex space-x-2 mb-4">
