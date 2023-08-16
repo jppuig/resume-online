@@ -13,7 +13,7 @@ export default function ExperienceIndexRoute() {
       <div className="dark:bg-titleBG py-10 sm:py-14">
         <h2 className="max-lg:text-center lg:pl-56 text-3xl underline decoration-teal-400 decoration-3 font-medium">Experience</h2>
       </div>
-      <article className="sm:my-12 max-sm:my-8 max-xl:flex max-xl:flex-col max-xl:place-items-center gap-y-4 sm:gap-y-8 xl:grid xl:grid-cols-6 xl:gap-x-20">
+      <article className="sm:my-12 max-sm:my-8 max-xl:flex max-xl:flex-col max-xl:place-items-center gap-y-4 sm:gap-y-10 xl:grid xl:grid-cols-6 xl:gap-x-16">
         <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl xl:col-start-2 xl:col-end-4">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Associate Professor</h3>
           <div className="text-sm text-slate-400">
