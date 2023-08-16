@@ -12,7 +12,7 @@ export default function ContactIndexRoute() {
 
   return (
     <div>
-      <div className="dark:bg-titleBG py-10 sm:py-14 ">
+      <div className="dark:bg-titleBG py-10 sm:py-14">
         <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Contact</h2>
       </div>
       <section className="inline-flex space-x-10 place-content-center place-items-center min-w-full mt-24">

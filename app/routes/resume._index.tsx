@@ -10,14 +10,14 @@ export const meta: V2_MetaFunction = () => {
 export default function ResumeIndexRoute() {
   return (
     <div>
-      <div className="dark:bg-titleBG py-14">
-        <h2 className="pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Resume</h2>
+      <div className="dark:bg-titleBG py-10 sm:py-14">
+        <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Resume</h2>
       </div>
-      <section className="grid grid-rows-3 h-min">
-        <section className="row-span-2 grid grid-cols-2 gap-20 my-4">
-          <article className="col-span-1 mt-4 place-self-end">
-            <h3 className="font-medium text-xl ml-8 underline decoration-teal-400">Education</h3>
-            <ul className="mt-3 flex flex-col">
+      <section className="max-sm:mt-6 sm:max-xl:mt-10 xl:grid xl:grid-rows-3">
+        <section className="xl:row-span-2 xl:grid xl:grid-cols-2 xl:gap-20 my-4">
+          <article className="xl:col-span-1 mt-4 xl:place-self-end ">
+            <h3 className="font-medium text-xl xl:ml-8 underline decoration-teal-400 max-xl:text-center">Education</h3>
+            <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
               <li className="inline-flex space-x-2 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -65,10 +65,10 @@ export default function ResumeIndexRoute() {
               </li>
             </ul>
           </article>
-          <article className="col-span-1 mt-4 max-w-lg">
-            <h3 className="font-medium text-xl ml-8 underline decoration-teal-400">Technologies</h3>
+          <article className="xl:col-span-1 sm:mt-4 xl:max-w-lg">
+            <h3 className="font-medium text-xl xl:ml-8 underline decoration-teal-400 max-xl:text-center">Technologies</h3>
             <article>
-              <ul className="grid mt-2">
+              <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
                 <li className="inline-flex space-x-2 mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
@@ -109,7 +109,7 @@ export default function ResumeIndexRoute() {
             </article>
           </article>
         </section>
-        <article className="row-span-1 inline-flex mx-48 h-20 justify-center self-center mb-16">
+        <article className="row-span-1 inline-flex mx-48 h-20 justify-center self-center mb-16 max-xl:hidden">
           {/* React */}
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#5a5a5a] w-16 justify-self-center mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-150">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>

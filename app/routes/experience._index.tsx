@@ -10,11 +10,11 @@ export const meta: V2_MetaFunction = () => {
 export default function ExperienceIndexRoute() {
   return (
     <div>
-      <div className="dark:bg-titleBG py-14">
-        <h2 className="pl-56 text-3xl underline decoration-teal-400 decoration-3 font-medium">Experience</h2>
+      <div className="dark:bg-titleBG py-10 sm:py-14">
+        <h2 className="max-lg:text-center lg:pl-56 text-3xl underline decoration-teal-400 decoration-3 font-medium">Experience</h2>
       </div>
-      <article className="grid grid-cols-6 gap-x-20 gap-y-8 my-12">
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-2 col-end-4">
+      <article className="sm:my-12 max-sm:my-8 max-xl:flex max-xl:flex-col max-xl:place-items-center gap-y-4 sm:gap-y-8 xl:grid xl:grid-cols-6 xl:gap-x-20">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl xl:col-start-2 xl:col-end-4">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Associate Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
@@ -25,7 +25,7 @@ export default function ExperienceIndexRoute() {
             </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-4 col-end-6">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl xl:col-start-4 xl:col-end-6">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Assistant Professor</h3>
           <div className="text-sm text-slate-400">
             <p>ORT University | Montevideo, UY</p>
@@ -35,7 +35,7 @@ export default function ExperienceIndexRoute() {
             </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-2 col-end-4">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl max-xl:grow xl:col-start-2 xl:col-end-4 sm:max-xl:pl-3 sm:max-xl:pr-16">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Paid Media Specialist</h3>
           <div className="text-sm text-slate-400">
             <p>Wasabi Digital | Montevideo, UY</p>
@@ -48,7 +48,7 @@ export default function ExperienceIndexRoute() {
             </ul>
           </div>
         </div>
-        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 col-start-4 col-end-6">
+        <div className="bg-titleBG rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl xl:col-start-4 xl:col-end-6">
           <h3 className="font-medium mb-1 underline decoration-teal-400">Reprogramming Team Member</h3>
           <div className="text-sm text-slate-400">
             <p>Sarea | Montevideo, UY</p>
