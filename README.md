@@ -1,12 +1,8 @@
-> **Warning**  
-> The `@remix-run/netlify` runtime adapter has been deprecated in favor of
-> `@netlify/remix-adapter` and will be removed in Remix v2. Please update your
-> code by changing all `@remix-run/netlify` imports to `@netlify/remix-adapter`.  
-> Keep in mind that `@netlify/remix-adapter` requires `@netlify/functions@^1.0.0`,
-> which is a breaking change compared to the current supported `@netlify/functions`
-> versions in `@remix-run/netlify`.
+# Welcome to my online resume!
 
-# Welcome to Remix!
+Here I leave an online version of my resume using remix, tailwindcss and netlify for deployment.
+
+<!-- # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
 - [Netlify Functions](https://www.netlify.com/products/functions/)
@@ -67,4 +63,4 @@ netlify deploy --build
 
 # production deployment
 netlify deploy --build --prod
-```
+``` -->
