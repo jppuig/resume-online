@@ -54,7 +54,7 @@ export default function ContactIndexRoute() {
             </div>
             <textarea name="message" placeholder="Message" className="rounded-md px-2 bg-darkBG border-borderBG border-2 max-md:h-28 md:max-xl:h-36 max-md:w-64 md:w-96 focus:border-white" />
           </div>
-          <input type="hidden" name="_next" value="http://localhost:3000/" />
+          <input type="hidden" name="_next" value="https://jppuig.netlify.app/" />
           <button type="submit" className="hover:bg-teal-400 w-20 py-2 border-2 rounded-xl border-teal-400 place-self-center">
             Send
           </button>
