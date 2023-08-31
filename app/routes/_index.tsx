@@ -14,12 +14,13 @@ export default function IndexRoute() {
         <div className="rounded-full max-w-xs border-8 border-borderBG shadow-2xl max-md:w-64 lg:ml-4">
           <img src="pictures/picCV.png" alt="profile" className="rounded-full" />
         </div>
-        <section className="space-y-4 max-lg:mt-4">
-          <h1 className="text-4xl max-lg:text-center lg:text-6xl">Juan Pedro <span className="font-medium">Puig</span></h1>
-          <article className="text-slate-400 text-sm max-w-xl">
+        <section className="max-lg:mt-4">
+          <h3 className="text-slate-400 max-lg:text-center lg:text-xl">Universidad ORT Professor</h3>
+          <h1 className="text-4xl max-lg:text-center lg:text-6xl mt-1">Juan Pedro <span className="font-medium">Puig</span></h1>
+          <article className="text-slate-400 text-sm max-w-xl mt-6">
             <p className="max-sm:mx-4">I am a Software Engineer student, currently on my 3rd year of studies. First two years approved with an average of 95/100.</p>  
           </article>
-          <div className="inline-flex space-x-5 justify-items-center min-w-full max-lg:place-content-center">
+          <div className="inline-flex space-x-5 justify-items-center min-w-full max-lg:place-content-center mt-6">
             <a href="pdfs/JuanPedroPuigResume.pdf" className="border border-teal-400 rounded-3xl px-3 py-2 hover:bg-teal-400" download>Download CV</a>
             <Link to="/contact" className="border border-teal-400 rounded-3xl px-3 py-2 hover:bg-teal-400">Contact</Link>
           </div>
