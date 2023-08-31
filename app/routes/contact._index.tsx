@@ -14,9 +14,9 @@ export default function ContactIndexRoute() {
       <div className="dark:bg-titleBG py-10 sm:py-14">
         <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Contact</h2>
       </div>
-      <section className="max-xl:space-y-6 xl:inline-flex xl:space-x-10 place-content-center place-items-center min-w-full max-sm:mt-8 max-xl:mt-14 xl:mt-24">
+      <section className="max-xl:grid max-xl:grid-rows-[auto, auto] max-xl:auto-rows-min xl:inline-flex xl:space-x-10 place-content-center place-items-center min-w-full max-sm:mt-8 max-xl:mt-14 xl:mt-24">
         {/* <article className="max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-8 my-8"> */}
-        <article className="flex flex-col space-y-7 my-4">
+        <article className="flex flex-col space-y-7 max-xl:row-start-2 max-sm:my-6 max-xl:my-10">
         {/* flex flex-col space-y-7 my-12 */}
           <div className="inline-flex space-x-2 items-center max-xl:place-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" className="w-8 h-8 stroke-teal-400">
