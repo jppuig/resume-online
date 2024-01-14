@@ -18,7 +18,7 @@ export default function IndexRoute() {
           <h3 className="text-slate-400 max-lg:text-center lg:text-xl">Universidad ORT Professor</h3>
           <h1 className="text-4xl max-lg:text-center lg:text-6xl mt-1">Juan Pedro <span className="font-medium">Puig</span></h1>
           <article className="text-slate-400 text-sm max-w-xl mt-6">
-            <p className="max-sm:mx-4">I am a Software Engineer student, currently on my 3rd year of studies. First two years approved with an average of 95/100.</p>  
+            <p className="max-sm:mx-4">I am a Software Engineer associate professor and student, currently on my 3rd year of studies. Two and a half years approved with an average of 95/100.</p>  
           </article>
           <div className="inline-flex space-x-5 justify-items-center min-w-full max-lg:place-content-center mt-6">
             <a href="pdfs/JuanPedroPuigResume.pdf" className="border border-teal-400 rounded-3xl px-3 py-2 hover:bg-teal-400" download>Download CV</a>
