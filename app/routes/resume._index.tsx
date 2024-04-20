@@ -84,7 +84,7 @@ export default function ResumeIndexRoute() {
                   </svg>
                   <div>
                     <h4 className="font-medium">Frameworks</h4>
-                    <p className="text-slate-400 text-sm">React, Remix, Redux, Flutter(basic), .NET, Blazor, Entity Framework</p>
+                    <p className="text-slate-400 text-sm">React, Angular, Remix, Redux, Flutter(basic), .NET, Blazor, Entity Framework, ASP.NET, ASP.NET Web api, Blazor</p>
                   </div>
                 </li>
                 <li className="inline-flex space-x-2 mb-4">
