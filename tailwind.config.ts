@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         'darkBG': '#222222',
-        'titleBG': '#252525',
+        'titleBG': '#2a2a2a',
         'borderBG': '#444444'
       },
     },

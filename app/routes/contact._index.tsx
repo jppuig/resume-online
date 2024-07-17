@@ -15,9 +15,7 @@ export default function ContactIndexRoute() {
         <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Contact</h2>
       </div>
       <section className="max-xl:grid max-xl:grid-rows-[auto, auto] max-xl:auto-rows-min xl:inline-flex xl:space-x-10 place-content-center place-items-center min-w-full max-sm:mt-8 max-xl:mt-14 xl:mt-24">
-        {/* <article className="max-lg:flex max-lg:flex-col lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-8 my-8"> */}
         <article className="flex flex-col space-y-7 max-xl:row-start-2 max-sm:my-6 max-xl:my-10">
-        {/* flex flex-col space-y-7 my-12 */}
           <div className="inline-flex space-x-2 items-center max-xl:place-content-center">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" className="w-8 h-8 stroke-teal-400">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
@@ -48,16 +46,14 @@ export default function ContactIndexRoute() {
         <form action="https://formsubmit.co/698a7f1092c6e2e356d5d295647715ec" method="POST" className="flex flex-col space-y-7 mt-1 items-center max-xl:place-content-center">
           <div className="xl:inline-flex max-xl:space-y-4">
             <div className="flex flex-col space-y-5 w-64 md:max-xl:w-96 xl:mr-4">
-              <input type="text" name="name" placeholder="Full Name" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
-              <input type="email" name="email" placeholder="Email Address" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
+              <input type="text" name="name" placeholder="Name" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
+              <input type="email" name="email" placeholder="Email address" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
               <input type="text" name="_subject" placeholder="Subject" className="rounded-md px-2 py-0 bg-darkBG border-borderBG border-2 focus:border-white" />
             </div>
             <textarea name="message" placeholder="Message" className="rounded-md px-2 bg-darkBG border-borderBG border-2 max-md:h-28 md:max-xl:h-36 max-md:w-64 md:w-96 focus:border-white" />
           </div>
           <input type="hidden" name="_next" value="https://jppuig.netlify.app/" />
-          <button type="submit" className="hover:bg-teal-400 w-20 py-2 border-2 rounded-xl border-teal-400 place-self-center">
-            Send
-          </button>
+          <button type="submit" className="hover:bg-teal-400 w-20 py-2 border rounded-xl border-teal-400 place-self-center">Send</button>
         </form>
       </section>
     </div>

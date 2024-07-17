@@ -7,7 +7,54 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+
 export default function ResumeIndexRoute() {
+  const education = [
+    {
+      title: "Software Engineer",
+      date: "2021 - current",
+      place: "ORT University",
+    },
+    {
+      title: "Certificate of proficiency in english (CPE)",
+      date: "2019",
+      place: "University of Cambridge",
+    },
+    {
+      title: "Degree in Communications",
+      date: "2019 - 2022",
+      place: "UdelaR (3rd year in studies complete, abandoned)",
+    },
+    {
+      title: "Maristas Zorrilla de San Martín High School",
+      date: "2010 - 2015",
+      place: "José Ellauri 527",
+    }
+  ];
+
+  const technologies = [
+    {
+      title: "Languages",
+      content: "C++, Java, C#, Python, TypeScript, Haskell, Solidity, Kotlin(basic)",
+    },
+    {
+      title: "Data Bases",
+      content: "MongoDB, SQL Microsoft Management Studio, Oracle SQL Express",
+    },
+    {
+      title: "Frameworks",
+      content: "React, Angular, Flutter(basic), .NET & Entity Framework, Blazor",
+    },
+    {
+      title: "Areas",
+      content: "Machine learning, Blockchain & DApps, Web development",
+    },
+    {
+      title: "Tools",
+      content: "NodeJS, Docker",
+    },
+  ];
+
   return (
     <div>
       <div className="dark:bg-titleBG py-10 sm:py-14">
@@ -15,103 +62,56 @@ export default function ResumeIndexRoute() {
       </div>
       <section className="max-sm:mt-6 sm:max-xl:mt-10 xl:grid xl:grid-rows-3">
         <section className="xl:row-span-2 xl:grid xl:grid-cols-2 xl:gap-20 my-4">
-          <article className="xl:col-span-1 mt-4 xl:place-self-end ">
-            <h3 className="font-medium text-xl xl:ml-8 underline decoration-teal-400 max-xl:text-center">Education</h3>
-            <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Software Engineer</h4>
-                  <p className="text-slate-400 text-sm">2021 - current | ORT University</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Certificate of proficiency in english (CPE)</h4>
-                  <p className="text-slate-400 text-sm">2019 | University of Cambridge</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Degree in Communications</h4>
-                  <p className="text-slate-400 text-sm">2019 - 2022 | UdelaR (3rd year in studies complete, abandoned)</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Full stack engineer</h4>
-                  <p className="text-slate-400 text-sm">2020 | Codecademy (online course)</p>
-                </div>
-              </li>
-              <li className="inline-flex space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                </svg>
-                <div>
-                  <h4 className="font-medium">Maristas Zorrilla de San Martín High School</h4>
-                  <p className="text-slate-400 text-sm">2010 - 2015 | José Ellauri 527</p>
-                </div>
-              </li>
-            </ul>
+          <article className="xl:col-span-1 mt-4 xl:flex xl:justify-end xl:align-top">
+            <div>
+              <h3 className="font-medium text-xl xl:ml-8 underline decoration-teal-400 max-xl:text-center">Education</h3>
+              <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
+                {
+                  education.map((exp: { title: string, date: string, place: string }) => (
+                    <li key={exp.title} className="inline-flex space-x-2 mb-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-4 h-4 mt-1 stroke-teal-400">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                      </svg>
+                      <div>
+                        <h4 className="font-medium">{ exp.title }</h4>
+                        <p className="text-slate-200 text-sm">{ exp.date } | { exp.place }</p>
+                      </div>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
           </article>
           <article className="xl:col-span-1 sm:mt-4 xl:max-w-lg">
             <h3 className="font-medium text-xl xl:ml-8 underline decoration-teal-400 max-xl:text-center">Technologies</h3>
-            <article>
-              <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
-                <li className="inline-flex space-x-2 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium">Languages & Data bases</h4>
-                    <p className="text-slate-400 text-sm">C++, Java, C#, Python, JavaScript, TypeScript, Dart, Haskell, Bash, Ada, SQL Express, MongoDB</p>
-                  </div>
-                </li>
-                <li className="inline-flex space-x-2 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium">Frameworks</h4>
-                    <p className="text-slate-400 text-sm">React, Angular, Remix, Redux, Flutter(basic), .NET, Blazor, Entity Framework, ASP.NET, ASP.NET Web api, Blazor</p>
-                  </div>
-                </li>
-                <li className="inline-flex space-x-2 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium">Styling</h4>
-                    <p className="text-slate-400 text-sm">CSS, TailwindCSS, Bootstrap</p>
-                  </div>
-                </li>
-                <li className="inline-flex space-x-2 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium">Tools</h4>
-                    <p className="text-slate-400 text-sm">HTML, NodeJS, Docker</p>
-                  </div>
-                </li>
-              </ul>
-            </article>
+            <ul className="mt-3 flex flex-col max-xl:max-w-md max-xl:mx-auto max-sm:px-4">
+              {
+                technologies.map((exp: { title: string, content: string }) => (
+                  <li key={exp.title} className="inline-flex space-x-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 mt-1 stroke-teal-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                    </svg>
+                    <div>
+                      <h4 className="font-medium">{ exp.title }</h4>
+                      <p className="text-slate-200 text-sm">{ exp.content }</p>
+                    </div>
+                  </li>
+                ))
+              }
+            </ul>
           </article>
         </section>
         <article className="row-span-1 inline-flex mx-48 h-20 justify-center self-center mb-16 max-xl:hidden">
+          {/* Angular */}
+          <svg viewBox="0 0 128 128" version="1.1" className="w-20 mx-2 transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-150">
+            <g id="surface1">
+              <path fill="#707070" d="M 64 15.359375 L 16.332031 32.359375 L 23.601562 95.386719 L 64 117.761719 L 104.398438 95.386719 L 111.667969 32.359375 Z M 64 15.359375 "/>
+              <path fill="#707070" d="M 64 15.359375 L 64 26.726562 L 64 26.675781 L 64 117.761719 L 104.398438 95.386719 L 111.667969 32.359375 Z M 64 15.359375 "/>
+              <path fill="#222222" d="M 64 26.675781 L 34.203125 93.492188 L 45.3125 93.492188 L 51.300781 78.539062 L 76.59375 78.539062 L 82.585938 93.492188 L 93.695312 93.492188 Z M 72.703125 69.324219 L 55.296875 69.324219 L 64 48.382812 Z M 72.703125 69.324219 "/>
+            </g>
+          </svg>
           {/* React */}
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#5a5a5a] w-16 justify-self-center mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-150">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#707070] w-16 justify-self-center mx-2 transition ease-in-out hover:-translate-y-1 hover:scale-150 duration-150">
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"></path>
@@ -119,55 +119,30 @@ export default function ResumeIndexRoute() {
             </g>
           </svg>
           {/* MongoDB */}
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#5a5a5a] w-16 justify-self-center mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-150 duration-150">
-            <path d="M15.9.087l.854 1.604c.192.296.4.558.645.802.715.715 1.394 1.464 2.004 2.266 1.447 1.9 2.423 4.01 3.12 6.292.418 1.394.645 2.824.662 4.27.07 4.323-1.412 8.035-4.4 11.12-.488.488-1.01.94-1.57 1.342-.296 0-.436-.227-.558-.436-.227-.383-.366-.82-.436-1.255-.105-.523-.174-1.046-.14-1.586v-.244C16.057 24.21 15.796.21 15.9.087z" fill="#5a5a5a"/>
-            <path d="M15.9.034c-.035-.07-.07-.017-.105.017.017.35-.105.662-.296.96-.21.296-.488.523-.767.767-1.55 1.342-2.77 2.963-3.747 4.776-1.3 2.44-1.97 5.055-2.16 7.808-.087.993.314 4.497.627 5.508.854 2.684 2.388 4.933 4.375 6.885.488.47 1.01.906 1.55 1.325.157 0 .174-.14.21-.244a4.78 4.78 0 0 0 .157-.68l.35-2.614L15.9.034z" fill="#5a5a5a"/>
-            <path d="M16.754 28.845c.035-.4.227-.732.436-1.063-.21-.087-.366-.26-.488-.453-.105-.174-.192-.383-.26-.575-.244-.732-.296-1.5-.366-2.248v-.453c-.087.07-.105.662-.105.75a17.37 17.37 0 0 1-.314 2.353c-.052.314-.087.627-.28.906 0 .035 0 .07.017.122.314.924.4 1.865.453 2.824v.35c0 .418-.017.33.33.47.14.052.296.07.436.174.105 0 .122-.087.122-.157l-.052-.575v-1.604c-.017-.28.035-.558.07-.82z" fill="#5a5a5a"/>
-          </svg>
-          {/* Remix */}
-          <svg xmlnsXlink="http://www.w3.org/1999/xlink" x-comp="Wordmark" viewBox="0 0 659 165" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="fill-[#5a5a5a] mx-2 w-24 justify-self-end transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <path fillRule="evenodd" clipRule="evenodd" d="M133.85 124.16C135.3 142.762 135.3 151.482 135.3 161H92.2283C92.2283 158.927 92.2653 157.03 92.3028 155.107C92.4195 149.128 92.5411 142.894 91.5717 130.304C90.2905 111.872 82.3473 107.776 67.7419 107.776H54.8021H0V74.24H69.7918C88.2407 74.24 97.4651 68.632 97.4651 53.784C97.4651 40.728 88.2407 32.816 69.7918 32.816H0V0H77.4788C119.245 0 140 19.712 140 51.2C140 74.752 125.395 90.112 105.665 92.672C122.32 96 132.057 105.472 133.85 124.16Z" fill="#5a5a5a"></path>
-            <path d="M0 161V136H45.5416C53.1486 136 54.8003 141.638 54.8003 145V161H0Z" fill="#5a5a5a"></path>
-            <path d="M654.54 47.1035H611.788L592.332 74.2395L573.388 47.1035H527.564L568.78 103.168L523.98 161.28H566.732L589.516 130.304L612.3 161.28H658.124L613.068 101.376L654.54 47.1035Z" fill="#5a5a5a"></path>
-            <path d="M229.43 120.576C225.59 129.536 218.422 133.376 207.158 133.376C194.614 133.376 184.374 126.72 183.35 112.64H263.478V101.12C263.478 70.1437 243.254 44.0317 205.11 44.0317C169.526 44.0317 142.902 69.8877 142.902 105.984C142.902 142.336 169.014 164.352 205.622 164.352C235.83 164.352 256.822 149.76 262.71 123.648L229.43 120.576ZM183.862 92.6717C185.398 81.9197 191.286 73.7277 204.598 73.7277C216.886 73.7277 223.542 82.4317 224.054 92.6717H183.862Z" fill="#5a5a5a"></path>
-            <path d="M385.256 66.5597C380.392 53.2477 369.896 44.0317 349.672 44.0317C332.52 44.0317 320.232 51.7117 314.088 64.2557V47.1037H272.616V161.28H314.088V105.216C314.088 88.0638 318.952 76.7997 332.52 76.7997C345.064 76.7997 348.136 84.9917 348.136 100.608V161.28H389.608V105.216C389.608 88.0638 394.216 76.7997 408.04 76.7997C420.584 76.7997 423.4 84.9917 423.4 100.608V161.28H464.872V89.5997C464.872 65.7917 455.656 44.0317 424.168 44.0317C404.968 44.0317 391.4 53.7597 385.256 66.5597Z" fill="#5a5a5a"></path>
-            <path d="M478.436 47.104V161.28H519.908V47.104H478.436ZM478.18 36.352H520.164V0H478.18V36.352Z" fill="#5a5a5a"></path>
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="fill-[#707070] w-16 justify-self-center mx-2 transition ease-in-out hover:-translate-y-1 hover:scale-150 duration-150">
+            <path d="M15.9.087l.854 1.604c.192.296.4.558.645.802.715.715 1.394 1.464 2.004 2.266 1.447 1.9 2.423 4.01 3.12 6.292.418 1.394.645 2.824.662 4.27.07 4.323-1.412 8.035-4.4 11.12-.488.488-1.01.94-1.57 1.342-.296 0-.436-.227-.558-.436-.227-.383-.366-.82-.436-1.255-.105-.523-.174-1.046-.14-1.586v-.244C16.057 24.21 15.796.21 15.9.087z" fill="#707070"/>
+            <path d="M15.9.034c-.035-.07-.07-.017-.105.017.017.35-.105.662-.296.96-.21.296-.488.523-.767.767-1.55 1.342-2.77 2.963-3.747 4.776-1.3 2.44-1.97 5.055-2.16 7.808-.087.993.314 4.497.627 5.508.854 2.684 2.388 4.933 4.375 6.885.488.47 1.01.906 1.55 1.325.157 0 .174-.14.21-.244a4.78 4.78 0 0 0 .157-.68l.35-2.614L15.9.034z" fill="#707070"/>
+            <path d="M16.754 28.845c.035-.4.227-.732.436-1.063-.21-.087-.366-.26-.488-.453-.105-.174-.192-.383-.26-.575-.244-.732-.296-1.5-.366-2.248v-.453c-.087.07-.105.662-.105.75a17.37 17.37 0 0 1-.314 2.353c-.052.314-.087.627-.28.906 0 .035 0 .07.017.122.314.924.4 1.865.453 2.824v.35c0 .418-.017.33.33.47.14.052.296.07.436.174.105 0 .122-.087.122-.157l-.052-.575v-1.604c-.017-.28.035-.558.07-.82z" fill="#707070"/>
           </svg>
           {/* Java */}
-          <svg fill="#5a5a5a" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-20 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
+          <svg fill="#707070" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-20 transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-150">
             <path d="M13.168 30.901c5.401 0.346 13.695-0.191 13.891-2.747 0 0-0.377 0.968-4.464 1.738-2.257 0.407-4.855 0.639-7.508 0.639-2.173 0-4.309-0.156-6.398-0.457l0.239 0.028c0-0.001 0.691 0.571 4.24 0.799zM19 1.004s3.117 3.117-2.955 7.91c-4.869 3.845-1.11 6.038-0.001 8.543-2.842-2.566-4.927-4.821-3.529-6.922 2.054-3.085 7.744-4.58 6.486-9.531zM22.393 22.978c5.627-2.924 3.025-5.735 1.21-5.355-0.249 0.047-0.465 0.107-0.674 0.182l0.030-0.009c0.119-0.167 0.283-0.296 0.474-0.369l0.007-0.002c3.593-1.263 6.356 3.725-1.16 5.701 0.046-0.041 0.084-0.090 0.111-0.145l0.001-0.003zM12.616 17.512s-5.451 1.295-1.929 1.764c0.948 0.078 2.052 0.122 3.166 0.122 1.424 0 2.831-0.073 4.218-0.214l-0.174 0.014c2.257-0.19 4.521-0.596 4.521-0.596-0.531 0.232-0.982 0.477-1.409 0.756l0.037-0.022c-5.535 1.456-16.228 0.779-13.149-0.71 1.357-0.703 2.963-1.115 4.665-1.115 0.019 0 0.038 0 0.057 0h-0.003zM25.16 26.627s0.849 0.699-0.933 1.238c-3.389 1.027-14.106 1.336-17.081 0.041-1.070-0.466 0.937-1.112 1.567-1.247 0.291-0.074 0.626-0.117 0.97-0.117 0.023 0 0.045 0 0.068 0.001l-0.003-0c-1.191-0.839-7.693 1.646-3.303 2.358 11.972 1.941 21.821-0.875 18.716-2.274zM17.395 15.344c0.314 0.377 0.505 0.868 0.505 1.402 0 0.719-0.346 1.358-0.88 1.759l-0.006 0.004s3.673-1.897 1.986-4.271c-1.576-2.214-2.784-3.314 3.758-7.108 0-0.001-10.267 2.563-5.363 8.214zM11.346 20.915s-1.285 0.951 0.677 1.155c0.859 0.108 1.852 0.169 2.86 0.169 1.826 0 3.605-0.202 5.315-0.585l-0.162 0.030c0.344 0.322 0.755 0.578 1.209 0.744l0.025 0.008c-7.097 2.076-15.004 0.162-9.925-1.522zM12.065 24.198s-1.146 0.667 0.816 0.892c0.719 0.107 1.548 0.168 2.392 0.168 1.354 0 2.671-0.157 3.934-0.455l-0.116 0.023c0.467 0.285 1.010 0.557 1.577 0.782l0.074 0.026c-5.872 2.516-13.287-0.147-8.676-1.436z"></path>
           </svg>
-          {/* Redux */}
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.000000 125.000000" preserveAspectRatio="xMidYMid meet" className="w-16 justify-self-center mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <g transform="translate(0.000000,125.000000) scale(0.100000,-0.100000)" fill="#5a5a5a" stroke="none">
-              <path d="M535 1197 c-65 -22 -100 -44 -148 -92 -141 -140 -166 -413 -59 -635 19 -40 26 -66 21 -83 -9 -34 15 -85 46 -97 40 -15 61 -12 91 14 54 46 22 146 -46 146 -24 0 -31 8 -54 60 -104 232 -50 508 116 594 66 33 154 39 203 13 67 -35 137 -140 151 -229 5 -31 12 -39 41 -49 19 -6 37 -9 39 -6 8 8 -24 133 -47 181 -30 65 -94 133 -150 162 -60 30 -149 39 -204 21z"/>
-              <path d="M504 836 c-97 -42 -31 -196 66 -156 17 7 35 21 41 31 12 24 53 25 155 4 96 -20 152 -45 230 -101 101 -72 174 -193 174 -288 0 -37 -33 -112 -63 -144 -58 -63 -171 -87 -271 -58 -55 16 -58 16 -86 -4 -17 -12 -30 -25 -30 -30 0 -20 107 -45 190 -45 71 1 95 5 145 28 147 68 209 189 171 337 -22 86 -57 143 -132 216 -103 100 -239 158 -400 171 -46 3 -84 10 -84 15 0 5 -16 16 -35 24 -40 17 -32 16 -71 0z"/>
-              <path d="M129 603 c-61 -66 -86 -109 -105 -183 -36 -140 19 -275 137 -335 204 -105 509 6 661 239 21 33 52 68 68 78 79 47 54 158 -35 158 -67 0 -108 -74 -73 -130 11 -17 7 -27 -28 -77 -52 -74 -139 -144 -234 -191 -127 -61 -283 -57 -363 9 -106 87 -101 249 12 372 35 37 39 47 33 72 -5 16 -13 30 -18 32 -6 2 -31 -18 -55 -44z"/>
-            </g>
-          </svg>
-          {/* JavaScript */}
-          <svg fill="#5a5a5a" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-16 mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <path d="M17.313 14.789h-2.809c0 2.422-0.011 4.829-0.011 7.254 0.033 0.329 0.051 0.712 0.051 1.099 0 0.81-0.081 1.601-0.236 2.365l0.013-0.076c-0.412 0.861-1.475 0.751-1.957 0.6-0.451-0.242-0.808-0.609-1.031-1.055l-0.006-0.014c-0.044-0.094-0.097-0.174-0.16-0.246l0.001 0.001-2.281 1.406c0.367 0.79 0.934 1.434 1.637 1.885l0.018 0.011c0.763 0.427 1.675 0.678 2.645 0.678 0.484 0 0.954-0.063 1.401-0.18l-0.038 0.009c0.988-0.248 1.793-0.89 2.254-1.744l0.009-0.019c0.359-0.914 0.566-1.973 0.566-3.080 0-0.388-0.026-0.77-0.075-1.145l0.005 0.044c0.015-2.567 0-5.135 0-7.722zM28.539 23.843c-0.219-1.368-1.11-2.518-3.753-3.59-0.92-0.431-1.942-0.731-2.246-1.425-0.063-0.158-0.099-0.341-0.099-0.532 0-0.124 0.015-0.244 0.044-0.359l-0.002 0.010c0.208-0.55 0.731-0.935 1.343-0.935 0.199 0 0.388 0.040 0.559 0.113l-0.009-0.004c0.552 0.19 0.988 0.594 1.215 1.112l0.005 0.013c1.292-0.845 1.292-0.845 2.193-1.406-0.216-0.369-0.459-0.689-0.734-0.977l0.002 0.002c-0.767-0.814-1.852-1.32-3.056-1.32-0.171 0-0.34 0.010-0.505 0.030l0.020-0.002-0.881 0.111c-0.856 0.194-1.587 0.639-2.133 1.252l-0.003 0.004c-0.535 0.665-0.859 1.519-0.859 2.449 0 1.279 0.613 2.415 1.56 3.131l0.010 0.007c1.706 1.275 4.2 1.555 4.519 2.755 0.3 1.462-1.087 1.931-2.457 1.762-0.957-0.218-1.741-0.83-2.184-1.652l-0.009-0.017-2.287 1.313c0.269 0.536 0.607 0.994 1.011 1.385l0.001 0.001c2.174 2.194 7.61 2.082 8.586-1.255 0.113-0.364 0.178-0.782 0.178-1.215 0-0.3-0.031-0.593-0.091-0.875l0.005 0.028zM1.004 1.004h29.991v29.991h-29.991z"></path>
-          </svg>
           {/* TypeScript */}
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.000000 86.000000"  preserveAspectRatio="xMidYMid meet" className="w-24 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <g transform="translate(0.000000,86.000000) scale(0.100000,-0.100000)" fill="#5a5a5a" stroke="none">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.000000 86.000000"  preserveAspectRatio="xMidYMid meet" className="w-24 transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-150">
+            <g transform="translate(0.000000,86.000000) scale(0.100000,-0.100000)" fill="#707070" stroke="none">
               <path d="M200 430 l0 -400 400 0 400 0 0 400 0 400 -400 0 -400 0 0 -400z m665 26 c18 -8 38 -23 44 -33 8 -16 5 -22 -20 -37 -27 -16 -30 -16 -45 -1 -25 24 -59 16 -59 -15 0 -20 11 -31 60 -57 72 -38 95 -64 95 -109 0 -48 -18 -81 -55 -99 -62 -29 -147 -13 -190 35 l-20 22 24 19 c30 24 43 24 66 -1 30 -34 95 -24 95 14 0 18 -14 30 -65 55 -93 47 -122 114 -74 175 36 46 84 57 144 32z m-205 -31 l0 -35 -55 0 -55 0 0 -150 0 -150 -35 0 -35 0 0 150 0 150 -55 0 -55 0 0 35 0 35 145 0 145 0 0 -35z"/>
             </g>
           </svg>
-          {/* NodeJS */}
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="fill-[#5a5a5a] w-24 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <path d="M12,1.85a1.62,1.62,0,0,0-.78.2L3.78,6.35A1.58,1.58,0,0,0,3,7.71v8.58a1.58,1.58,0,0,0,.78,1.36l2,1.12a3.24,3.24,0,0,0,1.71.47,2.07,2.07,0,0,0,2.21-2.33V8.44a.22.22,0,0,0-.22-.22H8.5a.22.22,0,0,0-.23.22v8.47c0,.66-.68,1.31-1.77.76l-2-1.17a.26.26,0,0,1-.11-.21V7.71a.24.24,0,0,1,.11-.21l7.44-4.29a.22.22,0,0,1,.22,0L19.55,7.5a.24.24,0,0,1,.11.21v8.58a.26.26,0,0,1-.11.21l-7.44,4.29a.24.24,0,0,1-.23,0L10,19.65a.26.26,0,0,0-.21,0,4.22,4.22,0,0,1-1.12.51c-.12,0-.31.11.07.32l2.48,1.47a1.55,1.55,0,0,0,1.56,0l7.44-4.29A1.58,1.58,0,0,0,21,16.29V7.71a1.58,1.58,0,0,0-.78-1.36l-7.44-4.3a1.59,1.59,0,0,0-.78-.2M14,8c-2.12,0-3.39.89-3.39,2.39s1.26,2.08,3.3,2.28c2.43.24,2.62.6,2.62,1.08,0,.83-.67,1.18-2.23,1.18-2,0-2.4-.49-2.55-1.47a.23.23,0,0,0-.22-.18h-1a.21.21,0,0,0-.21.22c0,1.24.68,2.74,3.94,2.74,2.35,0,3.7-.93,3.7-2.55s-1.08-2-3.37-2.34-2.54-.46-2.54-1,.2-1,1.91-1c1.5,0,2.09.33,2.32,1.36a.21.21,0,0,0,.21.17h1a.19.19,0,0,0,.15-.07.16.16,0,0,0,.05-.16C17.56,8.82,16.38,8,14,8Z"/>
-          </svg>
           {/* Pyhton */}
-          <svg fill="#5a5a5a" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-16 mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
+          <svg fill="#707070" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" className="w-16 mx-2 transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-150">
             <path d="M19.212 26.447l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.412 0.412 0.287 0.512 0.1 0.512-0.1 0.412-0.287 0.287-0.412 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.287-0.512-0.1-0.512 0.1zM27.297 8.64l0.35 0.075 0.4 0.15 0.437 0.225 0.45 0.337 0.45 0.437 0.437 0.587 0.4 0.737 0.35 0.912 0.262 1.1 0.175 1.3 0.062 1.537-0.075 1.537-0.2 1.3-0.3 1.075-0.4 0.887-0.45 0.712-0.5 0.562-0.525 0.412-0.525 0.3-0.5 0.2-0.45 0.112-0.4 0.062-0.3 0.025-0.2-0.012h-10.272v1.025h7.298l0.012 3.449 0.025 0.45-0.062 0.425-0.137 0.387-0.212 0.362-0.312 0.312-0.387 0.3-0.475 0.25-0.55 0.212-0.637 0.187-0.725 0.162-0.8 0.112-0.887 0.087-0.962 0.050-1.050 0.012-1.587-0.050-1.337-0.175-1.125-0.25-0.912-0.312-0.737-0.375-0.562-0.412-0.425-0.425-0.312-0.425-0.2-0.412-0.125-0.375-0.050-0.312-0.025-0.25 0.012-0.162v-6.673l0.063-0.8 0.162-0.675 0.262-0.575 0.325-0.475 0.375-0.4 0.412-0.3 0.437-0.25 0.437-0.175 0.412-0.125 0.375-0.075 0.325-0.050 0.262-0.025 0.162-0.012h7.298l0.862-0.062 0.737-0.175 0.625-0.262 0.512-0.35 0.412-0.4 0.337-0.437 0.25-0.45 0.187-0.45 0.125-0.437 0.087-0.4 0.050-0.35 0.025-0.262v-3.824h2.612l0.175 0.012zM10.939 3.704l-0.287 0.412-0.1 0.512 0.1 0.512 0.287 0.425 0.412 0.275 0.512 0.112 0.512-0.113 0.412-0.275 0.287-0.425 0.1-0.512-0.1-0.512-0.287-0.412-0.412-0.275-0.512-0.112-0.512 0.112zM18.812 1.229l1.125 0.25 0.912 0.325 0.737 0.375 0.562 0.4 0.425 0.425 0.312 0.425 0.2 0.412 0.125 0.375 0.050 0.325 0.025 0.25-0.012 0.162v6.673l-0.062 0.787-0.162 0.687-0.262 0.575-0.325 0.475-0.375 0.387-0.412 0.312-0.437 0.237-0.437 0.175-0.412 0.125-0.375 0.087-0.325 0.050-0.263 0.025h-7.46l-0.862 0.062-0.737 0.175-0.625 0.275-0.512 0.337-0.412 0.4-0.337 0.437-0.25 0.45-0.187 0.462-0.125 0.437-0.087 0.4-0.050 0.337-0.025 0.262v3.824h-2.787l-0.262-0.037-0.35-0.087-0.4-0.15-0.437-0.225-0.45-0.325-0.45-0.45-0.437-0.575-0.4-0.737-0.35-0.912-0.262-1.1-0.175-1.312-0.062-1.537 0.075-1.524 0.2-1.3 0.3-1.087 0.4-0.887 0.45-0.712 0.5-0.55 0.525-0.412 0.525-0.3 0.5-0.2 0.45-0.125 0.4-0.062 0.3-0.012h0.2l0.075 0.012h10.197v-1.037h-7.298l-0.012-3.436-0.025-0.462 0.062-0.425 0.137-0.387 0.212-0.35 0.312-0.325 0.387-0.287 0.475-0.25 0.55-0.225 0.637-0.187 0.725-0.15 0.8-0.125 0.887-0.075 0.962-0.050 1.050-0.025 1.587 0.063z"></path>
           </svg>
-          {/* Docker */}
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 mx-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-125 duration-150">
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
-            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
-            <g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="#5a5a5a"/> <path d="M18 7H16V9H18V7Z" fill="#222222"/> <path d="M10 10H12V12H10V10Z" fill="#222222"/> <path d="M6.00155 16.9414C6.17244 19.8427 7.90027 24 14 24C20.8 24 23.8333 19 24.5 16.5C25.3333 16.5 27.2 16 28 14C27.5 13.5 25.5 13.5 24.5 14C24.5 13.2 24 11.5 23 11C22.3333 11.6667 21.3 13.4 22.5 15C22 16 20.6667 16 20 16H6.9429C6.41342 16 5.97041 16.4128 6.00155 16.9414Z" fill="#222222"/> <path d="M9 13H7V15H9V13Z" fill="#222222"/> <path d="M10 13H12V15H10V13Z" fill="#222222"/> <path d="M15 13H13V15H15V13Z" fill="#222222"/> <path d="M16 13H18V15H16V13Z" fill="#222222"/> <path d="M21 13H19V15H21V13Z" fill="#222222"/> <path d="M15 10H13V12H15V10Z" fill="#222222"/> <path d="M16 10H18V12H16V10Z" fill="#222222"/> </g>
+          {/* C# */}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" className="w-16 mx-2 transition ease-in-out hover:-translate-y-1 hover:scale-125 duration-150">
+            <path fill="#707070" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/>
+            <path fill="#707070" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/>
+            <path fill="#222222" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1L100 51h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7H97zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z"/>
           </svg>
         </article>
       </section>
