@@ -52,7 +52,7 @@ export default function ResumeIndexRoute() {
     },
     {
       title: "Areas",
-      content: "Machine learning, Blockchain & DApps, Web development, Mobile Development",
+      content: "Machine learning, Blockchain & DApps, Web development, Mobile Development, Artificial Intelligence",
     },
     {
       title: "Tools",
