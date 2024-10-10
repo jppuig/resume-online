@@ -71,11 +71,13 @@ export default function ExperienceIndexRoute() {
             <div className={`rounded-2xl px-3 py-2 border border-teal-400 max-sm:max-w-xs max-xl:max-w-xl ${
                 index % 2 === 0 ? 'xl:col-start-2 xl:col-end-4' : 'xl:col-start-4 xl:col-end-6'
               }`} key={exp.title}>
-              <h3 className="font-medium mb-1 underline decoration-teal-400">{ exp.title }</h3>
-              <div className="text-sm text-slate-100">
+              <h3 className="font-medium mb-1 underline decoration-teal-400 text-lg">{ exp.title }</h3>
+              <div className="text-slate-300 text-sm">
                 <p>{ exp.company } | { exp.location }</p>
                 <p>{ exp.date }</p>
                 <p>{ exp.reference == null ? "" : "Reference: " + exp.reference.name + " - " + exp.reference.phone }</p>
+              </div>
+              <div>
                 <ul className="list-disc ml-4">
                   {
                     exp.description.map((desc: string) => (

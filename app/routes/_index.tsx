@@ -15,10 +15,10 @@ export default function IndexRoute() {
           <img src="pictures/picCV.png" alt="profile" className="rounded-full" />
         </div>
         <section className="max-lg:mt-4">
-          <h3 className="text-slate-100 max-lg:text-center lg:text-xl">Universidad ORT Professor</h3>
+          <h3 className="text-slate-200 max-lg:text-center lg:text-xl">Advanced student & professor at Universidad ORT</h3>
           <h1 className="text-4xl max-lg:text-center lg:text-6xl mt-1">Juan Pedro <span className="font-medium">Puig</span></h1>
-          <article className="text-slate-100 text-sm max-w-xl mt-6">
-            <p className="max-sm:mx-4">I am a Software Engineer associate professor and student, currently on my 4th year of studies. Three years completed with an average score of 95/100.</p>  
+          <article className="text-slate-100 max-w-xl mt-6">
+            <p className="max-sm:mx-4">I am a Software Engineer associate professor and student, currently on my 4th year of studies. Three years completed with an average score of <span className="font-medium">94/100</span>.</p>  
           </article>
           <div className="inline-flex space-x-5 justify-items-center min-w-full max-lg:place-content-center mt-6">
             <a href="pdfs/JuanPedroPuigResume.pdf" className="border border-teal-400 rounded-3xl px-3 py-2 hover:bg-teal-400" download>Download CV</a>
