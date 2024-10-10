@@ -63,7 +63,7 @@ export default function ResumeIndexRoute() {
   return (
     <div>
       <div className="dark:bg-titleBG py-10 sm:py-14">
-        <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Resume</h2>
+        <h2 className="max-lg:text-center lg:pl-60 text-3xl underline decoration-teal-400 decoration-3 font-medium">Education & Technical Skills</h2>
       </div>
       <section className="max-sm:mt-6 sm:max-xl:mt-10 xl:grid xl:grid-rows-3">
         <section className="xl:row-span-2 xl:grid xl:grid-cols-2 xl:gap-20 my-4">

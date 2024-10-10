@@ -37,11 +37,14 @@ export default function App() {
                   <Link to="/" className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-teal-400">Home</Link>
                 </li>
                 <li>
-                  <Link to="/resume" className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-teal-400">Resume</Link>
+                  <Link to="/education" className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-teal-400">Education & Technical Skills</Link>
                 </li>
                 <li>
                   <Link to="/experience" className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-teal-400">Experience</Link>
                 </li>
+                {/* <li>
+                  <Link to="/projects" className="hover:underline hover:decoration-solid hover:decoration-2 hover:decoration-teal-400">Projects</Link>
+                </li> */}
               </ul>
               <Link to="/contact" className="ml-4 sm:mr-4 sm:ml-6 lg:ml-28 lg:mr-16 rounded-md px-3 py-2 shadow-2xl bg-gradient-to-r from-green-500 to-cyan-500 hover:from-yellow-500 hover:to-pink-500">Contact</Link>
             </div>
