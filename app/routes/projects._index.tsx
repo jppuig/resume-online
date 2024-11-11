@@ -2,12 +2,12 @@ import type { V2_MetaFunction } from "@remix-run/node";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "JPP | Experience" },
+    { title: "JPP | Projects" },
     { name: "description", content: "Welcome to my resume!" },
   ];
 };
 
-export default function ExperienceIndexRoute() {
+export default function ProjectIndexRoute() {
   const projects = [
     {
       title: "",
